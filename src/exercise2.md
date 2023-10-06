@@ -11,25 +11,25 @@ Local Storage и Session Storage - это механизмы хранения д
 
 Основные методы взаимодействия с localStorage и sessionStorage через консоль в браузере:
 
-- Сохранение данных:
+Сохранение данных:
 
-  - localStorage.setItem(key, value) - сохраняет значение value по ключу key в Local Storage.
-  - sessionStorage.setItem(key, value) - сохраняет значение value по ключу key в Session Storage.
+- localStorage.setItem(key, value) - сохраняет значение value по ключу key в Local Storage.
+- sessionStorage.setItem(key, value) - сохраняет значение value по ключу key в Session Storage.
 
-- Получение данных:
+Получение данных:
 
-  - localStorage.getItem(key) - возвращает значение из Local Storage по ключу key.
-  - sessionStorage.getItem(key) - возвращает значение из Session Storage по ключу key.
+- localStorage.getItem(key) - возвращает значение из Local Storage по ключу key.
+- sessionStorage.getItem(key) - возвращает значение из Session Storage по ключу key.
 
-- Удаление данных:
+Удаление данных:
 
-  - localStorage.removeItem(key) - удаляет значение из Local Storage по ключу key.
-  - sessionStorage.removeItem(key) - удаляет значение из Session Storage по ключу key.
+- localStorage.removeItem(key) - удаляет значение из Local Storage по ключу key.
+- sessionStorage.removeItem(key) - удаляет значение из Session Storage по ключу key.
 
-- Очистка хранилища:
+Очистка хранилища:
 
-  - localStorage.clear() - удаляет все значения из Local Storage.
-  - sessionStorage.clear() - удаляет все значения из Session Storage.
+- localStorage.clear() - удаляет все значения из Local Storage.
+- sessionStorage.clear() - удаляет все значения из Session Storage.
 
 ## Что такое IndexedDB? Чем этот вид хранилища отличается от описанных выше?
 
