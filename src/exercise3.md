@@ -109,4 +109,4 @@ JSON.parse(localStorage.getItem('key'));
 
 Пожалуйста, обратите внимание, что вы должны использовать метод JSON.stringify() для преобразования объекта в строку перед сохранением его в хранилище, и метод JSON.parse() для преобразования строки обратно в объект при получении его из хранилища.
 
-![УПС!](https://foxstickers.ru/image/cache/catalog/tovary/avto/pricol/161/161z-1200x900.png)
+![УПС!](https://bugaga.ru/uploads/posts/2020-03/1584546826_ikiru-3.jpg)
