@@ -68,43 +68,43 @@
 
 ## Таблица OrderDetails:
 
-1. SQL:
+1. SQL: SELECT * FROM OrderDetails;
 
-Описание результата:
+Описание результата: Возвращает все записи из таблицы OrderDetails.
 
-Скриншот
+Скриншот OrderDetails1
 
-2. SQL:
+2. SQL: SELECT * FROM OrderDetails WHERE Quantity>50;
 
-Описание результата:
+Описание результата: Возвращает все записи из таблицы OrderDetails, где значение поля Quantity больше 50.
 
-Скриншот
+Скриншот OrderDetails2
 
-3. SQL:
+3. SQL: SELECT * FROM OrderDetails WHERE OrderID>10400 AND Quantity>=10 ORDER BY ProductID ASC;
 
-Описание результата:
+Описание результата: Возвращает все записи из таблицы OrderDetails, где значение поля OrderID больше 10400 и значение поля Quantity больше или равно 10, отсортированные по возрастанию поля ProductID.
 
-Скриншот
+Скриншот OrderDetails3
 
 ## Таблица Orders:
 
-1. SQL:
+1. SQL: SELECT * FROM Orders;
 
-Описание результата:
+Описание результата: Возвращает все записи из таблицы Orders.
 
-Скриншот
+Скриншот Orders1
 
-2. SQL:
+2. SQL: SELECT * FROM Orders WHERE OrderDate='1996-07-15' OR OrderDate='1996-07-16';
 
-Описание результата:
+Описание результата: Возвращает все записи из таблицы Orders, где значение поля OrderDate равно '1996-07-15' или '1996-07-16'.
 
-Скриншот
+Скриншот Orders2
 
-3. SQL:
+3. SQL: SELECT * FROM Orders WHERE ShipperID='2' AND (EmployeeID='3' OR EmployeeID='5');
 
-Описание результата:
+Описание результата: Возвращает все записи из таблицы Orders, где значение поля ShipperID равно '2' и значение поля EmployeeID равно '3' или '5'.
 
-Скриншот
+Скриншот Orders3
 
 ## Таблица Products:
 
