@@ -87,25 +87,21 @@ Session Storage:
 
 Для добавления объекта в sessionStorage, вы можете использовать следующую команду в консоли DevTools:
 ```
-javascript
 sessionStorage.setItem('key', JSON.stringify({property1: 'value1', property2: 'value2'}));
 ```
 
 Для добавления объекта в localStorage, вы можете использовать аналогичную команду:
 ```
-javascript
 localStorage.setItem('key', JSON.stringify({property1: 'value1', property2: 'value2'}));
 ```
 
 После выполнения этих команд, объект будет добавлен в соответствующее хранилище. Чтобы получить объект из хранилища, вы можете использовать следующую команду:
 ```
-javascript
 JSON.parse(sessionStorage.getItem('key'));
 ```
 
 или
 ```
-javascript
 JSON.parse(localStorage.getItem('key'));
 ```
 
