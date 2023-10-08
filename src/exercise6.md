@@ -125,7 +125,13 @@ ORDER BY OrderDetailID DESC;
 
 3. SQL: 
 
-Описание результата: 
+SELECT Orders.OrderID, Customers.CustomerID, Employees.EmployeeID, Orders.OrderDate, Shippers.ShipperID
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID
+INNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
+INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID;
+
+Описание результата: Объединяет таблицы "Orders", "Customers", "Employees" и "Shippers" по соответствующим идентификаторам (CustomerID, EmployeeID, ShipperID). В результате выполнения команды будут выбраны столбцы OrderID, CustomerID, EmployeeID, OrderDate и ShipperID из таблиц Orders, Customers, Employees и Shippers соответственно.
 
 Скриншот Orders3
 
