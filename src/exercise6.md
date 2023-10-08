@@ -181,13 +181,13 @@ ORDER BY Orders.OrderDate ASC;
 
 Скриншот Suppliers1
 
-2. SQL:
+2. SELECT * FROM Suppliers WHERE Country = 'Germany';
 
-Описание результата:
+Описание результата: Возвращает все записи из таблицы Suppliers, где значение поля Country равно 'Germany'.
 
 Скриншот Suppliers2
 
-3. SQL:
+3. 
 
 Описание результата:
 
