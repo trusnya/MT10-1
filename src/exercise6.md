@@ -150,40 +150,45 @@ ORDER BY Price DESC;
 
 ## Таблица Shippers:
 
-1. SQL:
+1. SELECT * FROM Shippers;
 
-Описание результата:
+Описание результата: Возвращает все записи из таблицы Shippers.
 
-Скриншот
+Скриншот Shippers1
 
-2. SQL:
+2. SELECT * FROM Shippers 
+WHERE ShipperID = 1;
 
-Описание результата:
+Описание результата: Возвращает все записи из таблицы Shippers, где значение поля ShipperID равно '1'.
 
-Скриншот
+Скриншот Shippers2
 
-3. SQL:
+3. JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID 
+JOIN OrderDetails ON Orders.OrderID = OrderDetails.OrderID 
+WHERE OrderDetails.Quantity > 5 AND Shippers.ShipperName = 'Federal Shipping' 
+GROUP BY Orders.OrderID 
+ORDER BY Orders.OrderDate ASC;
 
-Описание результата:
+Описание результата: Будет выведена таблица со всеми заказами, которые содержали более 5 единиц товара, и были доставлены компанией "Federal Shipping". Результат отсортирован по дате заказа по возрастанию и содержит номер заказа, дату заказа, название компании-доставщика и общее количество заказанных единиц.
 
-Скриншот
+Скриншот Shippers3
 
 ## Таблица Suppliers:
 
-1. SQL:
+1. SELECT * FROM Suppliers;
 
-Описание результата:
+Описание результата: Возвращает все записи из таблицы Suppliers.
 
-Скриншот
+Скриншот Suppliers1
 
 2. SQL:
 
 Описание результата:
 
-Скриншот
+Скриншот Suppliers2
 
 3. SQL:
 
 Описание результата:
 
-Скриншот
+Скриншот Suppliers3
