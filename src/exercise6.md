@@ -8,21 +8,19 @@
 
 ## Таблица Customers:
 
-1. SQL: SELECT * FROM Customers;
+1. SELECT * FROM Customers;
 
 Описание результата: Возвращает все записи из таблицы Customers.
 
 Скриншот Customers1
 
-2.  SQL: SELECT * FROM Customers WHERE Country='Germany';
+2. SELECT * FROM Customers WHERE Country='Germany';
 
 Описание результата: Возвращает все записи из таблицы Customers, где значение поля Country равно 'Germany'.
 
 Скриншот Customers2
 
-3. SQL: 
-
-SELECT Customers.CustomerName, COUNT(*) AS TotalOrders
+3. SELECT Customers.CustomerName, COUNT(*) AS TotalOrders
 FROM Customers
 JOIN Orders ON Customers.CustomerID = Orders.CustomerID
 GROUP BY Customers.CustomerName
@@ -34,21 +32,19 @@ HAVING COUNT(*) > 5;
 
 ## Таблица Categories:
 
-1. SQL: SELECT * FROM Categories;
+1. SELECT * FROM Categories;
 
 Описание результата: Извлекает все записи из таблицы Categories и выводит их на экран.
 
 Скриншот Categories1
 
-2. SQL: SELECT CategoryName, Description FROM Categories WHERE CategoryID = 3;
+2. SELECT CategoryName, Description FROM Categories WHERE CategoryID = 3;
 
 Описание результата: Извлекает название категории и описание для категории с ID равным 3.
 
 Скриншот Categories2
 
-3. SQL: 
-
-SELECT CategoryName, COUNT(*) AS TotalProducts
+3. SELECT CategoryName, COUNT(*) AS TotalProducts
 FROM Categories
 JOIN Products ON Categories.CategoryID = Products.CategoryID
 GROUP BY CategoryName
@@ -60,21 +56,19 @@ HAVING COUNT(*) > 5;
 
 ## Таблица Employees:
 
-1. SQL: SELECT * FROM Employees;
+1. SELECT * FROM Employees;
 
 Описание результата: Выбирает все данные из таблицы Employees, включая все столбцы и строки.
 
 Скриншот Employees1
 
-2. SQL: SELECT FirstName, LastName, BirthDate FROM Employees ORDER BY BirthDate;
+2. SELECT FirstName, LastName, BirthDate FROM Employees ORDER BY BirthDate;
 
 Описание результата: Выбирает имена и фамилии сотрудников, а также дату рождения и сортирует их по дате рождения.
 
 Скриншот Employees2
 
-3. SQL: 
-
-SELECT Orders.OrderID, Customers.CustomerName, Employees.FirstName, Employees.LastName
+3. SELECT Orders.OrderID, Customers.CustomerName, Employees.FirstName, Employees.LastName
 FROM Orders
 JOIN Customers ON Orders.CustomerID = Customers.CustomerID
 JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
@@ -86,21 +80,19 @@ WHERE Customers.Country = 'Germany';
 
 ## Таблица OrderDetails:
 
-1. SQL: SELECT * FROM OrderDetails;
+1. SELECT * FROM OrderDetails;
 
 Описание результата: Возвращает все записи из таблицы OrderDetails.
 
 Скриншот OrderDetails1
 
-2. SQL: SELECT * FROM OrderDetails WHERE Quantity>50;
+2. SELECT * FROM OrderDetails WHERE Quantity>50;
 
 Описание результата: Возвращает все записи из таблицы OrderDetails, где значение поля Quantity больше 50.
 
 Скриншот OrderDetails2
 
-3. SQL: 
-
-SELECT OrderID, ProductID, Quantity, OrderDetailID
+3. SELECT OrderID, ProductID, Quantity, OrderDetailID
 FROM OrderDetails
 WHERE Quantity > 10
 ORDER BY OrderDetailID DESC;
@@ -111,21 +103,19 @@ ORDER BY OrderDetailID DESC;
 
 ## Таблица Orders:
 
-1. SQL: SELECT * FROM Orders;
+1. SELECT * FROM Orders;
 
 Описание результата: Возвращает все записи из таблицы Orders.
 
 Скриншот Orders1
 
-2. SQL: SELECT * FROM Orders WHERE OrderDate='1996-07-15' OR OrderDate='1996-07-16';
+2. SELECT * FROM Orders WHERE OrderDate='1996-07-15' OR OrderDate='1996-07-16';
 
 Описание результата: Возвращает все записи из таблицы Orders, где значение поля OrderDate равно '1996-07-15' или '1996-07-16'.
 
 Скриншот Orders2
 
-3. SQL: 
-
-SELECT Orders.OrderID, Customers.CustomerID, Employees.EmployeeID, Orders.OrderDate, Shippers.ShipperID
+3. SELECT Orders.OrderID, Customers.CustomerID, Employees.EmployeeID, Orders.OrderDate, Shippers.ShipperID
 FROM Orders
 INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID
 INNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
@@ -137,23 +127,26 @@ INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID;
 
 ## Таблица Products:
 
-1. SQL:
+1. SELECT * FROM Products;
 
-Описание результата:
+Описание результата: Возвращает все записи из таблицы Products.
 
-Скриншот
+Скриншот Products1
 
-2. SQL:
+2. SELECT * FROM Products WHERE Price < 10;
 
-Описание результата:
+Описание результата: Возвращает все записи из таблицы Products, где значение поля Price меньше '10'
 
-Скриншот
+Скриншот Products2
 
-3. SQL:
+3. SELECT ProductName, Price FROM Products 
+WHERE Price < 10 AND ProductName LIKE 'F%' 
+AND ProductID NOT IN (4,6) 
+ORDER BY Price DESC;
 
-Описание результата:
+Описание результата: Будет выведена таблица со всеми продуктами, у которых цена меньше 10, имена которых начинаются на "F", исключая продукты с ProductID 4 и 6. Результат отсортирован по цене по убыванию и содержит только названия продуктов и их цены.
 
-Скриншот
+Скриншот Products3
 
 ## Таблица Shippers:
 
