@@ -56,23 +56,27 @@ HAVING COUNT(*) > 5;
 
 ## Таблица Employees:
 
-1. SQL:
+1. SQL: SELECT * FROM Employees;
 
-Описание результата:
+Описание результата: Выбирает все данные из таблицы Employees, включая все столбцы и строки.
 
-Скриншот
+Скриншот Employees1
 
-2. SQL:
+2. SQL: SELECT FirstName, LastName, BirthDate FROM Employees ORDER BY BirthDate;
 
-Описание результата:
+Описание результата: Выбирает имена и фамилии сотрудников, а также дату рождения и сортирует их по дате рождения.
 
-Скриншот
+Скриншот Employees2
 
-3. SQL:
+3. SQL: SELECT Orders.OrderID, Customers.CustomerName, Employees.FirstName, Employees.LastName
+FROM Orders
+JOIN Customers ON Orders.CustomerID = Customers.CustomerID
+JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
+WHERE Customers.Country = 'Germany';
 
-Описание результата:
+Описание результата: Выбирает идентификатор заказа, имя клиента, а также имя и фамилию сотрудника для заказов, где клиент из Германии. Он объединяет таблицы Orders, Customers и Employees по соответствующим полям CustomerID и EmployeeID.
 
-Скриншот
+Скриншот Employees3
 
 ## Таблица OrderDetails:
 
