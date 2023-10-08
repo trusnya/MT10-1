@@ -187,8 +187,13 @@ ORDER BY Orders.OrderDate ASC;
 
 Скриншот Suppliers2
 
-3. 
+3. SELECT Suppliers.SupplierName, AVG(Products.Price) AS AveragePrice 
+FROM Suppliers 
+JOIN Products ON Suppliers.SupplierID = Products.SupplierID 
+GROUP BY Suppliers.SupplierName 
+HAVING AVG(Products.Price) > 20 
+ORDER BY AveragePrice DESC;
 
-Описание результата:
+Описание результата: Будет выведена таблица со всеми поставщиками, у которых есть продукты в таблице Products, и средняя цена продуктов, которые они поставляют, выше 20. Результат отсортирован по убыванию средней цены и содержит название поставщика и среднюю цену продуктов.
 
 Скриншот Suppliers3
