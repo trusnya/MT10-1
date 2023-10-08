@@ -20,7 +20,9 @@
 
 Скриншот Customers2
 
-3. SQL: SELECT Customers.CustomerName, COUNT(*) AS TotalOrders
+3. SQL: 
+
+SELECT Customers.CustomerName, COUNT(*) AS TotalOrders
 FROM Customers
 JOIN Orders ON Customers.CustomerID = Orders.CustomerID
 GROUP BY Customers.CustomerName
@@ -44,7 +46,9 @@ HAVING COUNT(*) > 5;
 
 Скриншот Categories2
 
-3. SQL: SELECT CategoryName, COUNT(*) AS TotalProducts
+3. SQL: 
+
+SELECT CategoryName, COUNT(*) AS TotalProducts
 FROM Categories
 JOIN Products ON Categories.CategoryID = Products.CategoryID
 GROUP BY CategoryName
@@ -68,7 +72,9 @@ HAVING COUNT(*) > 5;
 
 Скриншот Employees2
 
-3. SQL: SELECT Orders.OrderID, Customers.CustomerName, Employees.FirstName, Employees.LastName
+3. SQL: 
+
+SELECT Orders.OrderID, Customers.CustomerName, Employees.FirstName, Employees.LastName
 FROM Orders
 JOIN Customers ON Orders.CustomerID = Customers.CustomerID
 JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
@@ -92,9 +98,14 @@ WHERE Customers.Country = 'Germany';
 
 Скриншот OrderDetails2
 
-3. SQL:
+3. SQL: 
 
-Описание результата:
+SELECT OrderID, ProductID, Quantity, OrderDetailID
+FROM OrderDetails
+WHERE Quantity > 10
+ORDER BY OrderDetailID DESC;
+
+Описание результата: Bыбирает поля OrderID, ProductID, Quantity и OrderDetailID из таблицы OrderDetails. Затем она фильтрует только те строки, где значение поля Quantity больше 10. Наконец, она сортирует результаты по убыванию значения поля OrderDetailID.
 
 Скриншот OrderDetails3
 
