@@ -20,31 +20,39 @@
 
 Скриншот Customers2
 
-3. SQL: SELECT * FROM Customers WHERE City='London' AND ContactName LIKE '%Thomas%';
+3. SQL: SELECT Customers.CustomerName, COUNT(*) AS TotalOrders
+FROM Customers
+JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+GROUP BY Customers.CustomerName
+HAVING COUNT(*) > 5;
 
-Описание результата: Возвращает все записи из таблицы Customers, где значение поля City равно 'London' и значение поля ContactName содержит строку 'Thomas'.
+Описание результата: Объединяет таблицы Customers и Orders по полю CustomerID. Затем он группирует результаты по имени клиента и подсчитывает общее количество заказов для каждого клиента. Затем он выбирает только тех клиентов, у которых количество заказов больше 5.
 
 Скриншот Customers3
 
 ## Таблица Categories:
 
-1. SQL:
+1. SQL: SELECT * FROM Categories;
 
-Описание результата:
+Описание результата: Извлекает все записи из таблицы Categories и выводит их на экран.
 
-Скриншот
+Скриншот Categories1
 
-2. SQL:
+2. SQL: SELECT CategoryName, Description FROM Categories WHERE CategoryID = 3;
 
-Описание результата:
+Описание результата: Извлекает название категории и описание для категории с ID равным 3.
 
-Скриншот
+Скриншот Categories2
 
-3. SQL:
+3. SQL: SELECT CategoryName, COUNT(*) AS TotalProducts
+FROM Categories
+JOIN Products ON Categories.CategoryID = Products.CategoryID
+GROUP BY CategoryName
+HAVING COUNT(*) > 5;
 
-Описание результата:
+Описание результата: Объединяет таблицы Categories и Products по полю CategoryID. Затем он группирует результаты по названию категории и подсчитывает общее количество продуктов в каждой категории. Затем он выбирает только те категории, в которых количество продуктов больше 5.
 
-Скриншот
+Скриншот Categories3
 
 ## Таблица Employees:
 
@@ -80,9 +88,9 @@
 
 Скриншот OrderDetails2
 
-3. SQL: SELECT * FROM OrderDetails WHERE OrderID>10400 AND Quantity>=10 ORDER BY ProductID ASC;
+3. SQL:
 
-Описание результата: Возвращает все записи из таблицы OrderDetails, где значение поля OrderID больше 10400 и значение поля Quantity больше или равно 10, отсортированные по возрастанию поля ProductID.
+Описание результата:
 
 Скриншот OrderDetails3
 
@@ -100,9 +108,9 @@
 
 Скриншот Orders2
 
-3. SQL: SELECT * FROM Orders WHERE ShipperID='2' AND (EmployeeID='3' OR EmployeeID='5');
+3. SQL: 
 
-Описание результата: Возвращает все записи из таблицы Orders, где значение поля ShipperID равно '2' и значение поля EmployeeID равно '3' или '5'.
+Описание результата: 
 
 Скриншот Orders3
 
