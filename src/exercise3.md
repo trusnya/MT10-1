@@ -110,3 +110,31 @@ JSON.parse(localStorage.getItem('key'));
 Пожалуйста, обратите внимание, что вы должны использовать метод JSON.stringify() для преобразования объекта в строку перед сохранением его в хранилище, и метод JSON.parse() для преобразования строки обратно в объект при получении его из хранилища.
 
 ![УПС!](https://bugaga.ru/uploads/posts/2020-03/1584546826_ikiru-3.jpg)
+
+**Выполнение:**
+
+**Юлия**
+
+Использованные команды:
+
+Сайт https://web.telegram.org/
+
+Session Storage:
+1. Добавление объекта 
+```
+sessionStorage.setItem("excludingBanners", JSON.stringify({banner1: true, banner2: false, banner3: true}))
+```
+2. Получение объекта
+```
+JSON.parse(sessionStorage.getItem('excludingBanners'))
+```
+
+Local Storage:
+1. Добавление объекта
+```
+localStorage.setItem("telegramData", JSON.stringify({username: "exampleUser", chatId: "123456789"}))
+```
+2. Получение объекта
+```
+JSON.parse(localStorage.getItem('telegramData'))
+```
