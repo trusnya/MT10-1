@@ -269,3 +269,200 @@ ORDER BY AveragePrice DESC;
 Описание результата: Будет выведена таблица со всеми поставщиками, у которых есть продукты в таблице Products, и средняя цена продуктов, которые они поставляют, выше 20. Результат отсортирован по убыванию средней цены и содержит название поставщика и среднюю цену продуктов.
 
 Скриншот Suppliers3
+
+
+**Наташа**  
+
+## Таблица Customers:  
+
+1.  
+```
+SELECT * FROM [Customers]  
+WHERE City IN ('Madrid');  
+```
+Описание результата:
+
+2.  
+```
+SELECT * FROM [Customers]  
+GROUP BY ContactName;  
+```
+Описание результата:
+
+3.  
+```
+SELECT * FROM [Customers]  
+WHERE City NOT IN ('München') AND CustomerID > 40  
+GROUP BY Country;   
+```
+Описание результата:
+
+## Таблица Categories:  
+1.  
+```
+SELECT * FROM [Categories]   
+WHERE CategoryName ('Seafood');  
+```
+Описание результата:
+
+2.  
+```
+SELECT * FROM [Categories]  
+WHERE Description NOT IN ('Cheeses');  
+```
+Описание результата:
+
+3.  
+```
+SELECT * FROM [Categories]    
+GROUP BY CategoryName  
+HAVING CategoryID >= 5;  
+```
+Описание результата:
+
+## Таблица Employees:  
+1.  
+```
+SELECT * FROM [Employees]   
+ORDER BY FirstName;   
+```
+Описание результата:
+
+2.  
+```
+SELECT * FROM [Employees]  
+GROUP BY Photo;  
+```
+Описание результата:
+
+3.  
+```
+SELECT * FROM [Employees]  
+WHERE FirstName not in ('Anne')  
+group by Notes  
+HAVING EmployeeID >= 5;    
+```
+Описание результата:
+
+## Таблица OrderDetails: 
+1.  
+```
+SELECT * FROM [OrderDetails]
+GROUP BY ProductID;
+```
+Описание результата: 
+
+2.  
+```
+SELECT * FROM [OrderDetails]
+WHERE OrderDetailID not in ('23','58')
+GROUP BY ProductID;
+```
+Описание результата:
+
+3.  
+```
+SELECT * FROM [OrderDetails]
+WHERE OrderDetailID not in ('23','58')
+GROUP BY ProductID
+HAVING 	OrderID = 10300;
+```
+Описание результата:
+
+## Таблица Orders:  
+1.  
+```
+SELECT * FROM [Orders]  
+GROUP BY CustomerID;  
+```
+Описание результата:
+
+2.  
+```
+SELECT * FROM [Orders]  
+WHERE ShipperID NOT IN ('1')  
+GROUP BY CustomerID;  
+```
+Описание результата:
+
+3.  
+```
+SELECT * FROM [Orders]  
+WHERE ShipperID NOT IN ('1')  
+GROUP BY CustomerID  
+HAVING CustomerID >= 10;
+```  
+Описание результата:
+
+## Таблица Products: 
+1. 
+```
+SELECT * FROM [Products]  
+GROUP BY Price;  
+```
+Описание результата:
+
+2.  
+```
+SELECT * FROM [Products]  
+WHERE SupplierID NOT IN ('15','26')  
+GROUP BY Price;   
+```
+Описание результата:
+
+3.  
+```
+SELECT * FROM [Products]  
+WHERE SupplierID NOT IN ('3')  
+GROUP BY Price  
+HAVING CategoryID = 2;  
+```
+Описание результата:
+
+## Таблица Shippers:  
+1.  
+```
+SELECT * FROM [Shippers];  
+```
+Описание результата:
+
+2.  
+```
+SELECT * FROM [Shippers]  
+GROUP BY ShipperName;  
+```
+Описание результата:
+
+3.  
+```
+SELECT * FROM [Shippers]  
+WHERE ShipperName NOT IN ('Speedy Express')  
+GROUP BY ShipperName  
+HAVING ShipperID >=2;  
+```
+Описание результата:
+
+## Таблица Suppliers:   
+1.  
+```
+SELECT * FROM [Suppliers]  
+GROUP BY Country;  
+```
+Описание результата:
+
+2.  
+```
+SELECT * FROM [Suppliers]  
+WHERE City NOT IN ('Paris')  
+GROUP BY Country;  
+```
+Описание результата:
+
+3. 
+```
+SELECT * FROM [Suppliers]  
+WHERE City NOT IN ('Paris')  
+GROUP BY Country  
+HAVING SupplierID >=10;  
+```
+Описание результата:
