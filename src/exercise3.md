@@ -145,3 +145,29 @@ localStorage.setItem("telegramData", JSON.stringify({username: "exampleUser", ch
 ```
 JSON.parse(localStorage.getItem('telegramData'))
 ```
+
+**Наташа**
+
+Использованные команды:
+
+Сайт https://www.wildberries.ru/
+
+Session Storage:
+1. Добавление объекта 
+```
+sessionStorage.setItem('happy_cat', JSON.stringify({property1: 'black', property2: 'white'}))
+```
+2. Получение объекта
+```
+JSON.parse(sessionStorage.getItem('happy_cat'))
+```
+
+Local Storage:
+1. Добавление объекта
+```
+localStorage.setItem('happy_cat', JSON.stringify({property1: 'black', property2: 'white'}))
+```
+2. Получение объекта
+```
+JSON.parse(localStorage.getItem('happy_cat'))
+```
