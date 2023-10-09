@@ -270,7 +270,6 @@ ORDER BY AveragePrice DESC;
 
 Скриншот Suppliers3
 
-
 **Наташа**  
 
 ## Таблица Customers:  
