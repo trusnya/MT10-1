@@ -174,3 +174,30 @@ localStorage.setItem('happy_cat', JSON.stringify({property1: 'black', property2:
 ```
 JSON.parse(localStorage.getItem('happy_cat'))
 ```
+
+
+**Лена**
+
+Использованные команды:
+
+Сайт https://www.avito.ru/
+
+Session Storage:
+1. Добавление объекта 
+```
+sessionStorage.setItem('for_girls', JSON.stringify({property1: '128', property2: '152', property3: '158'}))
+```
+2. Получение объекта
+```
+JSON.parse(sessionStorage.getItem('for_girls')) 
+```
+
+Local Storage:
+1. Добавление объекта
+```
+localStorage.setItem('for_girls', JSON.stringify({property1: '128', property2: '152', property3: '158'}))
+```
+2. Получение объекта
+```
+JSON.parse(localStorage.getItem('for_girls'))
+```
