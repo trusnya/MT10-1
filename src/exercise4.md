@@ -2,7 +2,7 @@
 
 Сайт: https://web.telegram.org/
 
-Созданные обЪекты: 
+Созданные объекты: 
 
 localStorage.setItem("telegramData", JSON.stringify({username: "exampleUser", chatId: "123456789"}));
 
