@@ -26,7 +26,8 @@
 
 Сайт https://web.telegram.org/
 
-Session Storage:
+**Session Storage:**
+
 1. Результат выполнения команд для добавления и получения объекта в "Session Storage"
 
 ![Результат выполнения команд для добавления и получения объекта в "Session Storage"](https://repos.21-school.ru/students/MT10.ID_1261488/Team__TL__siskoari_student.21_school.ru_.yU_riUIJSrSKka9sbo9uAA/MT10-1/-/raw/develop/src/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B8_%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0_%D0%B2_Session_Storage.png)
@@ -35,7 +36,8 @@ Session Storage:
 
 ![Состояние "Session Storage" после добавления объекта ](https://repos.21-school.ru/students/MT10.ID_1261488/Team__TL__siskoari_student.21_school.ru_.yU_riUIJSrSKka9sbo9uAA/MT10-1/-/raw/develop/src/%D0%A1%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5_Session_Storage_%D0%BF%D0%BE%D1%81%D0%BB%D0%B5_%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0.png)
 
-Local Storage:
+**Local Storage:**
+
 3. Результат выполнения команд для добавления и получения объекта в "Local Storage"
 
 ![Результат выполнения команд для добавления и получения объекта в "Local Storage"](https://repos.21-school.ru/students/MT10.ID_1261488/Team__TL__siskoari_student.21_school.ru_.yU_riUIJSrSKka9sbo9uAA/MT10-1/-/raw/develop/src/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B8_%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0_%D0%B2_Local_Storage.png)
